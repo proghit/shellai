@@ -1,0 +1,31 @@
+{
+  "name": "shell-ai",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outfile=shellai.js",
+    "compile": "bun build --compile src/index.ts --outfile=shellai",
+    "clean": "rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.35.0",
+    "@google/generative-ai": "^0.21.0",
+    "@types/marked": "^6.0.0",
+    "@types/marked-terminal": "^6.1.1",
+    "@types/prompts": "^2.4.9",
+    "commander": "^13.1.0",
+    "marked": "^15.0.6",
+    "marked-terminal": "^7.2.1",
+    "openai": "^4.79.1",
+    "picocolors": "^1.1.1",
+    "prompts": "^2.4.2",
+    "yocto-spinner": "^0.2.0"
+  },
+  "prettier": {}
+}
